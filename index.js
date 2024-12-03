@@ -6,7 +6,7 @@ const stripe = require("stripe")(process.env.STRIPE_KEY);
 
 // Initialize Express app
 const app = express();
-app.use(cors({ origin: true }));
+app.use(cors());
 app.use(express.json());
 
 // Define routes
