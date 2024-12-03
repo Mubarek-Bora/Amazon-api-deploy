@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/payment/create", async (req, res) => {
-  const total = req.query.total;
+  const total = parseInt(req.query.total);
 
   // Validate that 'total' is greater than 0
   if (total > 0) {
